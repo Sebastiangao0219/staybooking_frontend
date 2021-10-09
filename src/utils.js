@@ -10,7 +10,7 @@ export const login = (credential, asHost) => {
     body: JSON.stringify(credential),
   }).then((response) => {
     if (response.status !== 200) {
-      throw Error("Fail to log in");
+      throw Error("Failed to log in");
     }
  
     return response.json();
